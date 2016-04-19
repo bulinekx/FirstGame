@@ -15,7 +15,7 @@ import game.fields.TrapField;
 import game.fields.WallField;
 
 public class RandomBuilder extends BoardWithBordersBuilder {
-	private static final int MAX_FINISH_FIELDS = 3;
+	private static final int MAX_FINISH_FIELDS = 5;
 	private static final int MAX_ROCK_FIELDS = 10;
 	private static final int MAX_COIN_FIELDS = 6;
 	private static final int MAX_TRAP_FIELDS = 4;
