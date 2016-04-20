@@ -17,6 +17,11 @@ public class Game {
 		this.state = new State();
 	}
 
+	public Game(String path) {
+		this.state = new State();
+		board = MapReader.read(path, state);
+	}
+
 	public void init(BoardBuilderInterface bbi) {
 		board = new Board(this.n);
 		bbi.build(board, this.state);

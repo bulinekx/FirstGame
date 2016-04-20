@@ -1,0 +1,21 @@
+20
+XXXXXXXXMXXXXXXXXXXX
+X                  X
+X                  X
+X     O            X
+XO                 X
+X    O             X
+X      #           X
+X     S           #X
+X                  X
+X                  X
+X     #   O        X
+X         #  #    #X
+X            P     X
+X                  X
+X                  X
+X        $        #X
+X                  X
+X     $  O  $      X
+X  #             $ X
+XXXXXXXXXXXXXXXXXXXX

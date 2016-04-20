@@ -2,7 +2,7 @@ package game.fields;
 
 import game.State;
 
-public class CoinField extends AvailableField {
+ public class CoinField extends AvailableField {
 
 	protected boolean used = false;
 	

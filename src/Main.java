@@ -13,17 +13,21 @@ public class Main {
 	private static Scanner in;
 
 	public static void main(String[] args) {
+		Game game = null;
 		in = new Scanner(System.in);
-		System.out.println("Podaj n: ");
-		Game game = new Game(in.nextInt());
-		game.init(new RandomBuilder(new Date().getTime()));
+		if (args.length > 0) {
+			game = new Game(args[0]);
+		} else {
+			System.out.println("Podaj n: ");
+			game = new Game(in.nextInt());
+			game.init(new RandomBuilder(new Date().getTime()));
+		}
 		game.draw();
 
 		while (true) {
 			
-			int i=0;
 			System.out.println("coins: "+ game.getState().getCoins() ); // licznik coinsów 
-			
+			System.out.println("live: "+ game.getState().getLive() ); // ¿ycie
 			
 			
 			String input = in.next(".").toUpperCase(); //poruszanie siê

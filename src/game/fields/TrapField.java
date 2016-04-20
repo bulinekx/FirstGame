@@ -2,6 +2,7 @@ package game.fields;
 
 import game.State;
 
+
 public class TrapField extends AvailableField {
 
 	//protected boolean used = false;
@@ -23,9 +24,9 @@ public class TrapField extends AvailableField {
 	public void onEnter() throws PlayerException {
 		super.onEnter();
 	//	this.used = true; 
+		this.state.loselive();
 		this.state.dead();
 		this.state.loseCoins();
-		
 		
 		}
 }

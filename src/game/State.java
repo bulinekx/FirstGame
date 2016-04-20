@@ -6,6 +6,7 @@ import game.fields.PlayerGameOverException;
 
 public class State {
 	int coins;
+	int live=3;
 
 	public void addCoin() {
 		this.coins++;
@@ -30,9 +31,23 @@ public class State {
 	}
 	
 	public void dead() throws PlayerException {
-		if (this.getCoins() <= 0)
+		if (this.getLive() <= 0)
 			throw new PlayerGameOverException();
 	}
+	
+	public int getLive(){
+	return live; 
 			
 	}
+	
+	public void addLive() {
+		this.live++;
+	}
 
+	public void loselive() {
+		this.live-- ;
+		
+	}
+	
+
+}
